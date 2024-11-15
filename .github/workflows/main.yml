@@ -21,6 +21,9 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    - name: Fix permissions for Vite
+      run: chmod +x node_modules/.bin/vite
+
     - name: Run tests
       run: npm test
 
@@ -39,6 +42,9 @@ jobs:
 
     - name: Install dependencies
       run: npm install
+
+    - name: Fix permissions for Vite
+      run: chmod +x node_modules/.bin/vite
 
     - name: Deploy to Vercel
       env:
