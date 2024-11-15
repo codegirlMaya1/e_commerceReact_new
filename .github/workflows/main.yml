@@ -36,5 +36,8 @@ jobs:
           echo "Contents of Working Directory: $(ls -l)"
           echo "Contents of node_modules: $(ls -l node_modules)"
 
+      - name: Build project
+        run: npm run build
+
       - name: Run tests
         run: npm test src/features/test
