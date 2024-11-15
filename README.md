@@ -1,1 +1,1 @@
-# ReactEcommerce app allows users to filter products by category name and price, includes updated tests, user login, lanquage translation, users can update profile information, view past orders includes product images. App is deployed on Vercel e-commerce-react-new-qfe9.vercel.app
+# ReactEcommerce app allows users to filter products by category name and price, includes updated tests, user login, lanquage translation, users can update profile information, view past orders includes product images. App is deployed on Vercel https://e-commerce-react-new-qfe9.vercel.app
