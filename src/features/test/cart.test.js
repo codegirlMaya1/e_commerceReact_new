@@ -2,8 +2,8 @@ import React from 'react';
 import { render, fireEvent, waitFor, act, screen } from '@testing-library/react';
 import '@testing-library/jest-dom'; // Import this to use `toBeInTheDocument`
 import axios from 'axios';
-import AllProducts from './AllProducts';
-import ProductCard from './ProductCard';
+import AllProducts from '../../components/AllProducts';// Adjusted import path
+import ProductCard from '../../components/ProductCard';
 
 jest.mock('axios');
 

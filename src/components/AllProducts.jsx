@@ -45,42 +45,14 @@ const AllProducts = () => {
     <div>
       <h1>All Products</h1>
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Name"
-          value={newProduct.name}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="description"
-          placeholder="Description"
-          value={newProduct.description}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="price"
-          placeholder="Price"
-          value={newProduct.price}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="quantity"
-          placeholder="Quantity"
-          value={newProduct.quantity}
-          onChange={handleChange}
-        />
+        <input type="text" name="name" placeholder="Name" value={newProduct.name} onChange={handleChange} />
+        <input type="text" name="description" placeholder="Description" value={newProduct.description} onChange={handleChange} />
+        <input type="text" name="price" placeholder="Price" value={newProduct.price} onChange={handleChange} />
+        <input type="text" name="quantity" placeholder="Quantity" value={newProduct.quantity} onChange={handleChange} />
         <button type="submit">Add Product</button>
       </form>
       {products.map((product) => (
-        <ProductCard
-          key={product.id}
-          product={product}
-          deleteProduct={() => deleteProduct(product.id)}
-        />
+        <ProductCard key={product.id} product={product} deleteProduct={() => deleteProduct(product.id)} />
       ))}
     </div>
   );
